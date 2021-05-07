@@ -15736,6 +15736,7 @@ input, textarea {
     border-bottom: 1px solid #f2ede9;
     border-right: none;
     height: 100%;
+    width: 33%;
 }
 .promo-single-item:last-child {
     border-right: none;
@@ -16073,7 +16074,6 @@ input, textarea {
     font-weight: 600;
     line-height: 1.52;
     margin-bottom: 20px;
-    text-transform: capitalize;
     color: #301514;
     transition: all 0.5s ease;
 }
