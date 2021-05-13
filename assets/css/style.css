@@ -16806,6 +16806,15 @@ input, textarea {
     text-align: center;
 }
 
+.client-logo-display-single-item {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    padding-right: 12px;
+    padding-left: 12px;
+    justify-content: center;
+}
+
 .client-logo-display-single-item .image {
     transition: all 0.001s;
 }
