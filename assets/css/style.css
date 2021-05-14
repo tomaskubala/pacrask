@@ -14847,6 +14847,15 @@ input, textarea {
     animation: zoomIn 0.8s ease 3s 1 backwards;
 }
 
+/* Hero container */
+
+.hero-content .logo > img {
+    max-width: 300px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 18px;
+}
+
 /*Default Navigation Style*/
 .default-arrow .default-arrow-style, .default-arrow .swiper-button-next, .default-arrow .swiper-button-prev {
     background: linear-gradient(90deg, #f3722e 0%, #ff9900 100%);
@@ -18225,9 +18234,30 @@ Components - Sidebar Widget
     padding-left: 20px;
     line-height: 100px;
     display: inline-block;
-    color: #fff;
+    color: #ffffff;
     position: relative;
 }
+
+.header-bottom:not(.sticky) .logo.color {
+    display: none;
+}
+
+.header-bottom:is(.sticky) .logo.color {
+    display: block;
+}
+
+.header-bottom:not(.sticky) .logo.dark {
+    display: block;
+}
+
+.header-bottom:is(.sticky) .logo.dark {
+    display: none;
+}
+
+.header-bottom.sticky .header-nav > li > a {
+    color: #301514;
+}
+
 @media (min-width: 1200px) {
     .header-bottom .header-nav > li > a {
         padding-right: 30px;
@@ -18235,7 +18265,7 @@ Components - Sidebar Widget
     }
 }
 .header-bottom .header-nav > li > a:hover {
-    color: #301514;
+    color: #ff9900;
 }
 .header-bottom .header-nav > li > a::after {
     position: absolute;
@@ -18303,8 +18333,8 @@ Components - Sidebar Widget
     z-index: 99;
     width: 100%;
     top: 0;
-    background: #ff9900;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    box-shadow: 0 0 7px #00000038;
     animation-name: fadeInDown;
     animation-duration: 900ms;
     animation-timing-function: cubic-bezier(0.2, 1, 0.22, 1);
@@ -19032,4 +19062,16 @@ Components - Sidebar Widget
 }
 .no-csspointerevents .nice-select.open .list {
     display: block;
+}
+
+/* Contact section */
+#contact .logo > img {
+    max-width: 300px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+#contact .contact-info {
+    padding-top: 64px;
 }
